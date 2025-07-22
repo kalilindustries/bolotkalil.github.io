@@ -1,71 +1,53 @@
-# Particle Jekyll Theme
+# Vonge
 
-![](./particle.jpg)
+Vonge is a Personal portfolio/blog site template for Jekyll. Browse through a [live demo](https://jazzed-kale.cloudvent.net/).
+Increase the web presence of your brand with this configurable theme.
 
-This is a simple and minimalist template for Jekyll designed for developers that want to show of their portfolio.
+![Vonge template screenshot](_screenshot.png)
 
-The Theme features:
+Vonge was made by [CloudCannon](http://cloudcannon.com/), the JAMStack Cloud CMS.
+The component library is built and maintained for use with [Bookshop](https://github.com/cloudcannon/bookshop/)
 
-- Gulp
-- SASS
-- Sweet Scroll
-- Particle.js
-- BrowserSync
-- Font Awesome and Devicon icons
-- Google Analytics
-- Info Customization
+Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Community](https://cloudcannon.com/community/).
 
-## Basic Setup
+[![Deploy to CloudCannon](https://buttons.cloudcannon.com/deploy.svg)](https://app.cloudcannon.com/register#sites/connect/github/CloudCannon/vonge-jekyll-bookshop-template)
 
-1. [Install Jekyll](http://jekyllrb.com)
-2. Clone the particle theme: `git clone https://github.com/nrandecker/particle.git`
-3. Edit `_config.yml` to personalize your site.
+## Features
 
-## Site and User Settings
+* Component library for website building
+* Fully configurable Website
+* Pre-built pages
+* Pre-styled components
+* Blog
+* Category pages
+* Testimonials
+* Portfolio
+* Live editing with [CloudCannon](http://cloudcannon.com/)
+* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
+* Search engine optimisation
 
-You have to fill some informations on `_config.yml` to customize your site.
+## Develop
 
-```
-# Site settings
-description: A blog about lorem ipsum dolor sit amet
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://localhost:3000" # the base hostname & protocol for your site
+Vonge was built with [Jekyll](http://jekyllrb.com/) version 4.2.1, but should support newer versions as well.
 
-# User settings
-username: Lorem Ipsum
-user_description: Anon Developer at Lorem Ipsum Dolor
-user_title: Anon Developer
-email: anon@anon.com
-twitter_username: lorem_ipsum
-github_username:  lorem_ipsum
-gplus_username:  lorem_ipsum
-```
+Install the dependencies for Bookshop:
 
-**Don't forget to change your url before you deploy your site!**
+~~~bash
+$ npm install
+~~~
 
-## Color and Particle Customization
-- Color Customization
-  - Edit the sass variables
-- Particle Customization
-  - Edit the json data in particle function in app.js
-  - Refer to [Particle.js](https://github.com/VincentGarreau/particles.js/) for help
+Install the Jekyll dependencies with [Bundler](http://bundler.io/):
 
-## Running the blog in local
+~~~bash
+$ npm run jekyll:install
+~~~
 
-In order to compile the assets and run Jekyll on local you need to follow those steps:
+Run the website:
 
-- Install [NodeJS](https://nodejs.org/)
-- Install [Jekyll](https://jekyllrb.com): `sudo gem install bundler jekyll`
-- Install [Yarn](https://yarnpkg.com/): `npm install -g yarn`
-- Install dependencies: `yarn`
-- Run: `gulp`
+~~~bash
+$ npm start
+~~~
 
-## License
 
-This theme is free and open source software, distributed under the The MIT License. So feel free to use this Jekyll theme anyway you want.
-
-## Credits
-
-This theme was partially designed with the inspiration from these fine folks
-- [Willian Justen](https://github.com/willianjusten/will-jekyll-template)
-- [Vincent Garreau](https://github.com/VincentGarreau/particles.js/)
+> [!IMPORTANT]
+> When running locally, the pagination will not work. Deploy to CloudCannon to see successful pagination. 
