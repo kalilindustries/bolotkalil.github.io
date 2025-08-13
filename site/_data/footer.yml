@@ -4,12 +4,34 @@ footer_menu__settings:
       url: '/'
     - title: 'Projects'
       url: '/projects/'
-    - title: 'Elements'
-      url: '/elements/'
+    - title: 'Skills'
+      url: '/skills/'
     - title: 'About'
       url: '/about/'
-    - title: 'Blog'
-      url: '/blog/'
+#    - title: 'Blog'
+#      url: '/blog/'
 
 copyright_text_html: >-
-  <p> 2021 &copy; <a href="/">Vonge</a>. Template by <a href="https://cloudcannon.com/">CloudCannon</a>.</p>
+  <style>
+  .c-contact-form__contact-description{
+      font-weight: 300;
+  }
+  </style>
+  <p><a href="mailto:me@bolotkalil.com">me@bolotkalil.com</a></p>
+  <p><span id="current-year"></span> &copy; <a href="/">Bolot Kalil uulu</a></p>
+  <script>
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+  </script>
+
+#- _bookshop_name: blog-section
+#  title: Blog & Insights
+#  description_html: >-
+#    <p>Stories and lessons from building startups, working with rural communities, and engineering impactful devices.</p>
+#  link_url: /blog
+#  show_posts: false
+#
+#- _bookshop_name: newsletter
+#  newsletter_title: Stay Connected
+#  newsletter_description: Get updates on new projects, open-source tools, and innovation insights.
+#  newsletter_identifier: frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3
+#  newsletter_button: Subscribe

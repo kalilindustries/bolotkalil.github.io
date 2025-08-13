@@ -12,12 +12,12 @@ layout: default
     {{ content }}
   </div>
 
-  {% if page.previous.url %}
+  {% if page.next.url %}
   <div class="project__navigation animate">
-    <a class="project__prev" href="{{page.previous.url}}">
+    <a class="project__prev" href="{{page.next.url}}">
       <div class="project__box">
         <span class="project__nav__info">Next Project</span>
-        <h2 class="project__nav__title">{{page.previous.title}}<i class="ion ion-md-arrow-round-forward arrow-right"></i></h2>
+        <h2 class="project__nav__title">{{page.next.title}}<i class="ion ion-md-arrow-round-forward arrow-right"></i></h2>
       </div>
     </a>
   </div>
@@ -25,9 +25,10 @@ layout: default
 
 </div>
 
-{% bookshop
-  newsletter newsletter_title=site.data.newsletter.newsletter_title
-  newsletter_description=site.data.newsletter.newsletter_description
-  newsletter_identifier=site.data.newsletter.newsletter_identifier
-  newsletter_button=site.data.newsletter.newsletter_button
+{% bookshop contact-form
+  form_title='Let\'s Work Together'
+  form_success_page='https://formspree.io/f/mzzvaowa'
+  form_description='Enjoyed what you saw? Whether you’re planning a new project or just curious to learn more — I’d love to hear from you. Fill out the form below and let’s talk.'
+  form_submission_email='me@bolotkalil.com'
+  form_button_text='Send'
 %}
