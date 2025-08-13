@@ -1,4 +1,4 @@
-title: Bolot Kalil ггдг
+title: Bolot Kalil
 
 plugins:
   - jekyll-bookshop
@@ -9,7 +9,7 @@ plugins:
 # or different production / staging locations.
 bookshop_locations:
   - ../component-library
-
+destination: ../docs
 exclude:
   - postcss.config.js
   - node_modules

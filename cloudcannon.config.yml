@@ -39,6 +39,7 @@ collections_config:
     schemas:
       default:
         path: site/schemas/page.html
+
   projects:
     path: collections/_projects
     output: true
