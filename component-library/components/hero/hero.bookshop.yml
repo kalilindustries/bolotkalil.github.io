@@ -18,8 +18,6 @@ blueprint:
   image_alt: ""
   cta_button: ""
   cta_button_link: ""
-  cv_button: ""
-  cv_button_link: ""
   works_button: ""
   works_button_link: ""
 
@@ -34,8 +32,6 @@ preview:
   image_alt: Vanessa Marley's picture
   cta_button: Get in touch
   cta_button_link: "#contact"
-  cv_button: Look CV
-  cv_button_link: "/pdf/Kalil_uulu_Bolot_Resume.pdf"
   works_button: See my works
   works_button_link: "#projects"
 
