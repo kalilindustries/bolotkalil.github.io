@@ -3519,6 +3519,16 @@
     color: #110E38;
     border-bottom-color: #110E38;
   }
+  .currently-building {
+    padding: 24px 0;
+    color: #fff;
+    background: linear-gradient(90deg, #1495a7 0%, #003687 167%);
+  }
+  .currently-building p {
+    margin: 0;
+    font-weight: 600;
+    text-align: center;
+  }
   .c-hero {
     padding: 96px 0;
   }
@@ -4106,6 +4116,9 @@
   }
   .c-project-card__image:hover img {
     transform: scale(1.05);
+  }
+  .c-project-card__image--accent {
+    background: linear-gradient(135deg, #1495a7 0%, #003687 100%);
   }
   .c-project-card__content {
     position: relative;

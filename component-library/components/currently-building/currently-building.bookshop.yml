@@ -1,0 +1,17 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Currently Building
+  description: A short highlighted update
+  icon: announcement
+  tags:
+    - Content
+
+blueprint:
+  text: ""
+
+preview:
+  text: "Currently building: A new project."
+
+_inputs: {}

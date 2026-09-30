@@ -1,8 +1,8 @@
 {% assign c = "c-project-card" %}
 <article class="{{c}} col col-4 col-d-6 col-t-12">
   <div class="{{c}}__content">
-    <a href="{{ include.project.url }}" class="{{c}}__image">
-      <img loading="lazy" src="{{ include.project.image }}" alt="{{ include.project.title }}">
+    <a href="{{ include.project.url }}" class="{{c}}__image{% unless include.project.image %} {{c}}__image--accent{% endunless %}">
+      {% if include.project.image %}<img loading="lazy" src="{{ include.project.image }}" alt="{{ include.project.title }}">{% endif %}
     </a>
     <div class="{{c}}__info">
       <div class="{{c}}__info-wrap">

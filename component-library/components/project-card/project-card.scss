@@ -64,6 +64,10 @@
 		}
 	}
 
+	&__image--accent {
+		background: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+	}
+
 	&__content {
 		position: relative;
 		display: flex;

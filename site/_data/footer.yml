@@ -17,7 +17,7 @@ copyright_text_html: >-
       font-weight: 300;
   }
   </style>
-  <p><a href="mailto:me@bolotkalil.com">me@bolotkalil.com</a></p>
+  <p><a href="mailto:bolotkaliluulu@gmail.com">bolotkaliluulu@gmail.com</a></p>
   <p><span id="current-year"></span> &copy; <a href="/">Bolot Kalil uulu</a></p>
   <script>
     document.getElementById("current-year").textContent = new Date().getFullYear();

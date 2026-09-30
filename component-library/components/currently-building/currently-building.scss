@@ -1,0 +1,11 @@
+.currently-building {
+  padding: 24px 0;
+  color: $white;
+  background: linear-gradient(90deg, $primary-color 0%, $secondary-color 167%);
+
+  p {
+    margin: 0;
+    font-weight: 600;
+    text-align: center;
+  }
+}

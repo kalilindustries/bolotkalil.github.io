@@ -1,5 +1,6 @@
 <!-- begin projects -->
-<section class="section projects" id="projects">
+{% assign section_id = include.section_id | default: "projects" %}
+<section class="section projects" id="{{ section_id }}">
   <div class="container">
     <div class="row">
       <div class="col col-12">
@@ -8,7 +9,7 @@
           <div class="section__info">
             <div class="section__head">
               <h2 class="section__title">{{ include.title }}</h2>
-              <a class="section__link" href="{{ include.link_url }}">View all <i class="ion ion-md-arrow-forward"></i></a>
+              {% if include.link_url %}<a class="section__link" href="{{ include.link_url }}">View all <i class="ion ion-md-arrow-forward"></i></a>{% endif %}
             </div>
             <div class="section__description">{{ include.description_html }}</div>
           </div>
@@ -16,9 +17,21 @@
           {% if include.show_projects %}
           <div class="row">
             {% for project in site.projects %}
-              {% if forloop.index <= 6 %}
+              {% if include.project_group == "hardware" %}
+                {% if project.title == "Agym" or project.title == "Zhargylchak" %}
+                  {% bookshop project-card project=project %}
+                {% endif %}
+              {% elsif project.title == "AVA N20" or project.title == "EyeSite" or project.title == "MatchPlay Scheduler" or project.title == "ShotPage" %}
                 {% bookshop project-card project=project %}
               {% endif %}
+            {% endfor %}
+          </div>
+          {% endif %}
+
+          {% if include.items %}
+          <div class="row">
+            {% for project in include.items %}
+              {% bookshop project-card project=project %}
             {% endfor %}
           </div>
           {% endif %}

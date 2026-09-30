@@ -4,7 +4,8 @@
 # Other icons can be found at https://ionicons.com/v4/
 social:
 - {icon: "Twitter", link: "https://x.com/bolotkalil"}
+- {icon: "LinkedIn", link: "https://www.linkedin.com/in/bolotkalil"}
 - {icon: "Github", link: "https://github.com/bolotkalil"}
-- {icon: "LinkedIn", link: "https://linkedin.com/in/bolotkalil"}
-- {icon: "Youtube", link: "https://youtube.com/@bolotkalil"}
+- {icon: "md-paper", label: "Medium", link: "https://medium.com/@bolotkaliluulu"}
+- {icon: "Youtube", link: "https://www.youtube.com/@BolotKalilUulu"}
 - {icon: "Instagram", link: "https://instagram.com/bolotkalil"}
